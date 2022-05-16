@@ -20,12 +20,13 @@ def pyramid_numbers(num: int):
     this function takes one number as integer,
     and prints it in a pattern like pyramid in a specific pattern.
     '''
-    while num != 0:
+    for iteration in range(num):
         for item in range(num,0,-1):
            print(item, end=" ")
         print(" ")
-        num-= 1
+        num-=1
 # calling the function
-pyramid_numbers(5)
+pyramid_numbers(10)
 # printing documentation
 print(pyramid_numbers.__doc__) 
+
